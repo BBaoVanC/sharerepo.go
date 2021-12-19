@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #111;
+}
+
+body {
+  color: #d3d3d3;
+  margin: auto;
+  max-width: 720px;
+  font-family: "Open Sans", "Noto Sans", sans-serif;
+  overflow-wrap: break-word;
+}
+
+.content {
+  margin: 20px;
+}
+
+a {
+  color: inherit;
+}
+
+h1 a:not(:hover) {
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.link-anchor {
+  text-decoration: none;
+}
+
+.link {
+  background-color: #222;
+  border-radius: 12px;
+  padding: 16px 24px;
+}
+
+.link p {
+  font-size: 24px;
+  margin: 0;
+}
+
+.link:hover {
+  background-color: #333;
+}
+
+.icon {
+  height: 1em;
+}
