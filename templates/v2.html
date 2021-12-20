@@ -1,0 +1,24 @@
+<!-- See https://github.com/stekc/ShareRepo-Simple -->
+<html>
+    <head>
+        <script>
+            // Usage:
+            // ?pkgman=sileo&repo=https://repo.stkc.win/
+            const urlParams = new URLSearchParams(window.location.search);
+            const pkgman = urlParams.get('pkgman');
+            const repo = urlParams.get('repo');
+            if (pkgman == "sileo") { window.location.replace(`sileo://source/${repo}`); }
+            if (pkgman == "cydia") { window.location.replace(`cydia://url/https://cydia.saurik.com/api/share#?source=${repo}`); }
+            if (pkgman == "zebra") { window.location.replace(`zbra://sources/add/${repo}`); }
+            if (pkgman == "installer") { window.location.replace(`installer://add/${repo}`); }
+        </script>
+    </head>
+    <body>
+        <p>
+            Something went wrong redirecting you to your package manager.
+        </p>
+        <p>
+            <a href="/">Return home</a>
+        </p>
+    </body>
+</html>
