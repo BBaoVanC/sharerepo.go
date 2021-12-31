@@ -2,7 +2,7 @@ package main
 
 import (
     "log"
-    "text/template"
+    "html/template"
     "net/http"
     "github.com/GeertJohan/go.rice"
 )
@@ -20,6 +20,7 @@ func main() {
 
     http.HandleFunc("/favicon.ico", handleNoContent)
 
+    log.Println("Listening on :8080")
     http.ListenAndServe(":8080", nil)
 }
 
